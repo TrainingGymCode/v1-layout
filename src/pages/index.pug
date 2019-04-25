@@ -8,13 +8,13 @@ block meta
 //-   link(rel='stylesheet', href='css/some.css')
 
 block header
-  p Лого
+  include ../pug/blocks/header.pug
 
 block content
   h1 Заголовок
 
-//- block footer
-//-   p footer
+block footer
+  include ../pug/blocks/footer.pug
 
 //- block append page-bottom
 //-   script(src='js/some.js')
