@@ -1,1 +1,6 @@
 //- Примеси
+mixin site-menu(mx-style)
+  ul(class=-mx-style+"_list")
+    -var menu_list=[["About", ''],["Potrtfolio", ''],["Services", ''],["Clients", ''],["Blog", ''],["Cotact", '']];
+      each item in menu_list
+        a(href= item[1])= item[0]

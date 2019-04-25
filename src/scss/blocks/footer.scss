@@ -14,3 +14,14 @@ footer {
     text-decoration: none;
   }
 }
+.footer-menu {
+  &__list {
+    display: flex;
+  }
+  &__item {
+
+  }
+  &__list {
+    content:"•";
+  }
+}
