@@ -1,0 +1,16 @@
+footer {
+
+}
+
+.footer-contacts {
+
+  &__copyright {
+    @include sansus_webissimo--regular(12px, $gray-light)
+  }
+  &__foot-menu {
+
+  }
+  &__link {
+    text-decoration: none;
+  }
+}
