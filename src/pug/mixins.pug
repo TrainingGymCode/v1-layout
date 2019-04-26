@@ -1,6 +1,7 @@
 //- Примеси
-mixin site-menu(mx-style)
-  ul(class=-mx-style+"_list")
+mixin site_menu(mx_style)
+  ul(class=mx_style)
     -var menu_list=[["About", ''],["Potrtfolio", ''],["Services", ''],["Clients", ''],["Blog", ''],["Cotact", '']];
       each item in menu_list
-        a(href= item[1])= item[0]
+        li(class=mx_style+"__item")
+          a(class=mx_style+"__link", href= item[1])= item[0]
