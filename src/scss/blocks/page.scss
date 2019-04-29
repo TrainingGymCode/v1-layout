@@ -19,3 +19,37 @@
     flex: 0 0 auto;
   }
 }
+
+
+// ===================== BASIC STYLES =======================
+.section__head {
+  margin-top: 44px;
+  @include homestead_display(14px, rgb(144,144,144));
+}
+.article__wrapper {
+  width: $col-width;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  // flex: 0 0 auto;
+}
+.article__logo {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  border: none;
+  border-radius: 22px;
+  background-color: #565656;
+  background: repeating-linear-gradient(-45deg,#676767 0%,#676767 1%, #575757 1%, #575757 3%);
+  @include homestead_display(21px,rgb(203,203,203));
+}
+.article__head {
+  @include sansus_webissimo--regular(16px, rgb(121,121,121));
+  text-align: left;
+}
+.article__text {
+  @include sansus_webissimo--regular(12px, rgb(121,121,121));
+  text-align: left;
+}

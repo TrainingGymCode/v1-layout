@@ -22,21 +22,21 @@ block content
         -var l=services_arr.length;
         -for (i=0; i<l; i++)
           article.article__wrapper
-            .artcle__logo= services_arr[i][0]
+            .article__logo= services_arr[i][0]
             h3.article__head= services_arr[i][1]
             p.article__text= services_arr[i][2]
         -;//
     // =================== PROJECTS ============
     section.projects
       h2.section__head Latest Projects
-        .projects__slider-wrapper
-          -var projects_arr=[["","","Lorem Ipsum is simply dummy text of the printing and typesetting industry."],["","","Lorem Ipsum is simply dummy text of the printing and typesetting industry."],["","","Lorem Ipsum is simply dummy text of the printing and typesetting industry."]]
-          each item in projects_arr
-            .slide
-              .slide__img-wrapper
-                img.slide__img
-              p.slide__text= item[2]
-            -;
+      .projects__slider-wrapper
+        -var projects_arr=[["","","Lorem Ipsum is simply dummy text of the printing and typesetting industry."],["","","Lorem Ipsum is simply dummy text of the printing and typesetting industry."],["","","Lorem Ipsum is simply dummy text of the printing and typesetting industry."]]
+        each item in projects_arr
+          .slide
+            .slide__img-wrapper
+              img.slide__img
+            p.slide__text= item[2]
+          -;
 block footer
   include ../pug/blocks/footer.pug
 block append page-bottom
