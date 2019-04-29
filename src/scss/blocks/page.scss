@@ -4,10 +4,15 @@
     flex-direction: column;
     align-self: center;
     height: 100%;
-    width: 900px;
+    width: $min-width;
     // background-color: yellow;
+    border-top: $page-border;
+    border-bottom: $page-border;
+    padding-top: 74px;
   }
   &__content {
+    display: flex;
+    flex-direction: row;
     flex: 1 0 auto;
   }
   &__footer-wrapper {

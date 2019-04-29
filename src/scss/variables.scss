@@ -21,6 +21,7 @@ $warning-color:       #fdc05d;
 $gray-light:          #9e9e9e;
 $gray-dark:           #231f20;
 
+$page-border:         5px solid rgba(202,202,202,0.5);
 $text-color:          $gray-dark;
 
 // ===================== FONTS STYLES =======================
@@ -81,10 +82,13 @@ $line-height:         1.4;
   color: $mx-font-color;
 }
 
+// ===================== BASIC STYLES =======================
 
 // ===================== SCREEN SIZES =======================
 $screen-xs:           480px;
 $screen-sm:           768px;
 $screen-md:           992px;
 $screen-lg:           1200px;
-$min-width:           900px;
+$min-width:           920px;
+$col-width:           217px;
+$col-padding:         17px;
