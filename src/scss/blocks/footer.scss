@@ -1,27 +1,67 @@
 footer {
-
+  display: flex;
+  flex-direction: row;
 }
 
 .footer-contacts {
-
+  display: flex;
+  flex-direction: column;
+  &-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
   &__copyright {
-    @include sansus_webissimo--regular(12px, $gray-light)
+    @include sansus_webissimo--regular(12px, $gray-light);
   }
   &__foot-menu {
 
   }
   &__link {
     text-decoration: none;
+    @include sansus_webissimo--regular(12px, $gray-light);
   }
 }
 .footer-menu {
-  &__list {
-    display: flex;
-  }
+  display: flex;
+  flex-direction: row;
+  list-style: none;
   &__item {
-
+    text-decoration: none;
+    @include sansus_webissimo--regular(12px, $gray-light);
+    & a {
+      text-decoration: none;
+      @include sansus_webissimo--regular(12px, $gray-light);
+      position: relative;
+    }
+    &:after {
+      display: inline-block;
+      position: relative;
+      content:" . ";
+      margin-left:10px;
+      margin-right: 10px;
+    }
   }
-  &__list {
-    content:"•";
+}
+
+@mixin footer-contacts__button {
+  width: 30px;
+  height: 30px;
+  display: block;
+  border-radius: 3px;
+}
+.footer-contacts__button {
+  &--rss {
+    @include footer-contacts__button;
+    background-color: #fed970;
+    background-image: url('../img/ico_rss.png');
+    border: 1px solid #f4b64d;
+  }
+  &--twitter {
+    @include footer-contacts__button;
+    background-color: #49d7fe;
+  }
+  &--fb {
+    @include footer-contacts__button;
+    background-color: #718fc7;
   }
 }

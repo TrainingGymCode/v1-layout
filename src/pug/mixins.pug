@@ -1,7 +1,7 @@
 //- Примеси
 mixin site_menu(mx_style)
   ul(class=mx_style)
-    -var menu_list=[["About", ''],["Potrtfolio", ''],["Services", ''],["Clients", ''],["Blog", ''],["Cotact", '']];
+    -var menu_list=[["About", '#'],["Potrtfolio", '#'],["Services", '#'],["Clients", '#'],["Blog", '#'],["Contact", '#']];
       each item in menu_list
         li(class=mx_style+"__item")
           a(class=mx_style+"__link", href= item[1])= item[0]
