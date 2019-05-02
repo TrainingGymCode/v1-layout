@@ -1,21 +1,20 @@
 footer {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  width: $min-width;
 }
 .page__footer-wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+
+  // justify-content: space-between;
 }
 
 .footer-contacts {
   // display: flex;
   // flex-direction: column;
-  &-wrapper {
+  &__wrapper {
     display: flex;
     flex-direction: column;
-    flex-grow: 10;
+    flex-grow: 1;
   }
   &__copyright {
     @include sansus_webissimo--regular(12px, $gray-light);
@@ -53,7 +52,8 @@ footer {
 @mixin footer-contacts__button($bk-col, $bk-url,$bd-col) {
   width: 30px;
   height: 30px;
-  display: flex;
+  display: block;
+  margin-left: 30px;
   border-radius: 3px;
   background: $bk-col url($bk-url) no-repeat center center;
   border: 1px solid $bd-col;
