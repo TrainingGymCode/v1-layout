@@ -31,8 +31,8 @@
 
 .article__wrapper {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap-reverse;
+  flex-direction: row;
   width: $col-width;
   // flex: 0 0 auto;
 }
