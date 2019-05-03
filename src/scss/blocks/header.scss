@@ -4,6 +4,7 @@ header {
   width: 144px;
   max-width: $col-width;
 }
+
 // ============= LOGO =============
 .logo__link {
   display: flex;
@@ -15,6 +16,7 @@ header {
   text-decoration: none;
   background-image: url('../img/log_round.png');
 }
+
 .logo__title {
   text-align: center;
   @include homestead_display(21px,rgb(203, 203, 203));

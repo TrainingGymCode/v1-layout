@@ -1,16 +1,10 @@
-footer {
+footer, .page__footer-wrapper  {
   display: flex;
   flex-direction: row;
   width: $min-width;
 }
-.page__footer-wrapper {
-
-  // justify-content: space-between;
-}
 
 .footer-contacts {
-  // display: flex;
-  // flex-direction: column;
   &__wrapper {
     display: flex;
     flex-direction: column;
@@ -27,6 +21,7 @@ footer {
     @include sansus_webissimo--regular(12px, $gray-light);
   }
 }
+
 .footer-menu {
   display: flex;
   flex-direction: row;
@@ -59,6 +54,7 @@ footer {
   border: 1px solid $bd-col;
   flex-grow: 0;
 }
+
 .footer-contacts__button {
   &--rss {
     @include footer-contacts__button(#fed970,'../img/ico_rss.png', #f4b64d);
