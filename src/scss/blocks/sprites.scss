@@ -1,0 +1,54 @@
+@mixin sprite {
+    background-image: url('../img/spritesheet.png');
+    background-repeat: no-repeat;
+    display: block;
+}
+
+@mixin sprite-back {
+    // @include sprite;
+    width: 60px;
+    height: 60px;
+    background-position: -5px -5px;
+}
+
+@mixin sprite-ico_fb {
+@include sprite;
+    width: 10px;
+    height: 18px;
+    background-position: -75px -5px;
+}
+
+@mixin sprite-ico_rss {
+@include sprite;
+    width: 17px;
+    height: 16px;
+    background-position: -75px -33px;
+}
+
+@mixin sprite-ico_twitter {
+@include sprite;
+    width: 22px;
+    height: 17px;
+    background-position: -75px -59px;
+}
+
+@mixin sprite-shape_round {
+@include sprite;
+    width: 44px;
+    height: 44px;
+    background-position: -102px -5px;
+}
+
+@mixin sprite-slider_back {
+@include sprite;
+    width: 6px;
+    height: 6px;
+    background-position: -107px -59px;
+}
+
+@mixin sprite-slider_button {
+@include sprite;
+    width: 25px;
+    height: 25px;
+    background-position: -123px -59px;
+}
