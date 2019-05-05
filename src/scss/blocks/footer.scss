@@ -47,14 +47,16 @@ footer, .page__footer-wrapper  {
   }
 }
 
-@mixin footer-contacts__button($bk-col, $bk-url,$bd-col) {
+@mixin footer-contacts__button($bk-col, $bd-col) {
   display: block;
   flex-grow: 0;
   width: 30px;
   height: 30px;
   margin-left: 30px;
   border-radius: 3px;
-  background: $bk-col url($bk-url) no-repeat center center;
+  background-color: $bk-col;
+  // background-repeat: no-repeat;
+  // background-position: center;
   border: 1px solid $bd-col;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
 
@@ -75,14 +77,18 @@ footer, .page__footer-wrapper  {
 
 .footer-contacts__button {
   &--rss {
-    @include footer-contacts__button(#fed970,'../img/ico_rss.png', #f4b64d);
+    // @include sprite-ico_rss;
+    @include footer-contacts__button(#fed970, #f4b64d);
   }
 
   &--twitter {
-    @include footer-contacts__button(#49d7fe,'../img/ico_twitter.png', #36b6d9);
+    @include sprite-ico_twitter;
+    @include footer-contacts__button(#49d7fe, #36b6d9);
     }
 
   &--fb {
-    @include footer-contacts__button(#718fc7,'../img/ico_fb.png', #4d6ba3);
+    @include sprite-ico_fb;
+    @include footer-contacts__button(#718fc7, #4d6ba3);
+    background-position: center center;
   }
 }

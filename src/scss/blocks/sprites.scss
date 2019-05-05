@@ -1,6 +1,6 @@
 @mixin sprite {
     background-image: url('../img/spritesheet.png');
-    background-repeat: no-repeat;
+    // background-repeat: no-repeat;
     display: block;
 }
 
@@ -48,6 +48,55 @@
 
 @mixin sprite-slider_button {
 @include sprite;
+    width: 25px;
+    height: 25px;
+    background-position: -123px -59px;
+}
+
+// ====================================================
+.sprite {
+    background-image: url('../img/spritesheet.png');
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-back {
+    width: 60px;
+    height: 60px;
+    background-position: -5px -5px;
+}
+
+.sprite-ico_fb {
+    width: 10px;
+    height: 18px;
+    background-position: -75px -5px;
+}
+
+.sprite-ico_rss {
+    width: 17px;
+    height: 16px;
+    background-position: -75px -33px;
+}
+
+.sprite-ico_twitter {
+    width: 22px;
+    height: 17px;
+    background-position: -75px -59px;
+}
+
+.sprite-shape_round {
+    width: 44px;
+    height: 44px;
+    background-position: -102px -5px;
+}
+
+.sprite-slider_back {
+    width: 6px;
+    height: 6px;
+    background-position: -107px -59px;
+}
+
+.sprite-slider_button {
     width: 25px;
     height: 25px;
     background-position: -123px -59px;
