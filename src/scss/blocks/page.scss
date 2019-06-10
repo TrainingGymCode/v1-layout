@@ -62,6 +62,80 @@
   text-align: left;
 }
 
+// ===================== SLIDER =======================
+
+.main-slider {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  padding: 14px;
+  border: 1px solid $gray-slide;
+  background:url('../img/slide_back.png') repeat;
+
+  &:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    display: block;
+    width: calc(100% - 6px);
+    height: 100%;
+    left: 2px;
+    top: 2px;
+    border: 1px solid $gray-slide;
+    background:url('../img/slide_back.png') repeat;
+  }
+}
+
+.main-slider__wrapper {
+
+}
+
+.main-slider__slide {
+
+}
+
+.main-slider__img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.main-slider__counter {
+  display: flex;
+  flex-direction: row;
+}
+
+.main-slider__counter-item {
+  // display: block;
+  width: 9px;
+  height: 9px;
+  margin-left: 0px;
+  margin-right: 5px;
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #fff;
+  // cursor: pointer;
+  &--active {
+    background: linear-gradient(180deg, #71c5c8,#2b696d);
+  }
+  &::after {
+    display: block;
+    position: relative;
+    top:-2px;
+    left:-2px;
+    z-index: -1;
+    width: 11px;
+    height: 11px;
+    content: '';
+    background: linear-gradient(
+      180deg,
+      #d1d1d1,
+      #b5b5b5);
+  }
+ }
+
 // ===================== SERVICES =======================
 .services__wrapper {
   display: flex;
