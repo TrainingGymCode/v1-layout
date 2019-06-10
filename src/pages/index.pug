@@ -14,8 +14,18 @@ block header
 block content
   main
     // =================== SLIDER ============
-    section.slider
-
+    section.main-slider
+      .main-slider__wrapper
+        .main-slider__slide
+          img.main-slider__img
+      .main-slider__counter
+        a(href='#').main-slider__counter-item
+        a(href='#').main-slider__counter-item
+        a(href='#').main-slider__counter-item.main-slider__counter-item--active
+        a(href='#').main-slider__counter-item
+        a(href='#').main-slider__counter-item
+      a(href="#").main-slider__arrow.main-slider__arrow--left
+      a(href="#").main-slider__arrow.main-slider__arrow--right
     -;//
     // =================== SERVICES ============
     section.services
