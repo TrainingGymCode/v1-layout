@@ -16,7 +16,7 @@ block content
     // =================== SLIDER ============
     section.slider
 
-
+    -;//
     // =================== SERVICES ============
     section.services
       h2.section__head Our Services
@@ -33,13 +33,14 @@ block content
     section.projects
       h2.section__head Latest Projects
       .projects__slider-wrapper
-        -var projects_arr=[["","","Lorem Ipsum is simply dummy text of the printing and typesetting industry."],["","","Lorem Ipsum is simply dummy text of the printing and typesetting industry."],["","","Lorem Ipsum is simply dummy text of the printing and typesetting industry."]]
+        -var projects_arr=[["img/pic01.jpg","","Lorem Ipsum is simply dummy text of the printing and typesetting industry."],["img/pic02.jpg","","Lorem Ipsum is simply dummy text of the printing and typesetting industry."],["img/pic03.jpg","","Lorem Ipsum is simply dummy text of the printing and typesetting industry."]]
         each item in projects_arr
           .slide
             .slide__img-wrapper
-              img.slide__img
+              img.slide__img(src= item[0], alt= item[1])
             p.slide__text= item[2]
           -;
+    .projects__slider-indicator
 block footer
   include ../pug/blocks/footer.pug
 
