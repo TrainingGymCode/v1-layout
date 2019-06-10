@@ -78,7 +78,12 @@ footer, .page__footer-wrapper  {
 .footer-contacts__button {
   &--rss {
     // @include sprite-ico_rss;
-    @include footer-contacts__button(#fed970, #f4b64d);
+    &:before {
+      content: '';
+      position: relative;
+      @include footer-contacts__button(#fed970, #f4b64d);
+    }
+
   }
 
   &--twitter {

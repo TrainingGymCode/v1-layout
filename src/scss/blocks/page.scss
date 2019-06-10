@@ -31,9 +31,9 @@
 
 .article__wrapper {
   display: flex;
-  flex-wrap: wrap-reverse;
   flex-direction: row;
   width: $col-width;
+  margin-right: $col-margin;
   // flex: 0 0 auto;
 }
 
@@ -42,7 +42,9 @@
   align-items: center;
   justify-content: center;
   width: 44px;
+  min-width: 44px;
   height: 44px;
+  margin-right: 14px;
   border: none;
   border-radius: 22px;
   // background-color: #565656;
@@ -56,6 +58,43 @@
 }
 
 .article__text {
+  @include sansus_webissimo--regular(12px, rgb(121,121,121));
+  text-align: left;
+}
+
+// ===================== SERVICES =======================
+.services__wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+// ===================== PROJECTS =======================
+.projects {
+  width: 100%;
+}
+
+.projects__slider-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+
+}
+.slide {
+  margin-right: $col-margin;
+
+}
+.slide__img-wrapper {
+  border: 1px solid $gray-slide;
+  padding: 1px;
+}
+.slide__img {
+  display: block;
+  border: 1px solid $gray-slide;
+  width: 100%;
+  height: auto;
+}
+.slide__text {
   @include sansus_webissimo--regular(12px, rgb(121,121,121));
   text-align: left;
 }

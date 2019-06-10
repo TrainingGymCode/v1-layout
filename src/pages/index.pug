@@ -26,8 +26,9 @@ block content
         -for (i=0; i<l; i++)
           article.article__wrapper
             .article__logo= services_arr[i][0]
-            h3.article__head= services_arr[i][1]
-            p.article__text= services_arr[i][2]
+            .article__text-wrapper
+              h3.article__head= services_arr[i][1]
+              p.article__text= services_arr[i][2]
         -;//
     // =================== PROJECTS ============
     section.projects
