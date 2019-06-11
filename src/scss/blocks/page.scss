@@ -71,7 +71,9 @@
   justify-content: center;
   position: relative;
   width: 100%;
-  padding: 12px 20px 10px 20px;
+  max-width: $col-width + $col-margin + $col-width + $col-margin + $col-width +1px;
+  margin-bottom: 62px;
+  padding: 12px;
   border: 1px solid $gray-slide;
   background:url('../img/slide_back.png') repeat;
 
@@ -90,7 +92,7 @@
 }
 
 .main-slider__wrapper {
-
+  padding-bottom: 16px;
 }
 
 .main-slider__slide {
@@ -109,33 +111,27 @@
 }
 
 .main-slider__counter-item {
-  // display: block;
-  width: 9px;
-  height: 9px;
-  margin-left: 0px;
-  margin-right: 5px;
-  position: relative;
-  background-color: #fff;
-  border: 1px solid #fff;
-  // cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 11px;
+  height: 11px;
+  margin-right: 6px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.07));
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(180deg, #d1d1d1, #b5b5b5) 1 100%;
+  border-image-slice: 1;
+  box-shadow: rgba(0, 0, 0, 0.32) 0px 2px 4px;
 
   &--active {
-    background: linear-gradient(180deg, #71c5c8,#2b696d);
-  }
-
-  &::after {
-    display: block;
-    position: relative;
-    top:-2px;
-    left:-2px;
-    z-index: -1;
-    width: 11px;
-    height: 11px;
-    content: '';
-    background: linear-gradient(
-      180deg,
-      #d1d1d1,
-      #b5b5b5);
+    &::before {
+      content: '';
+      display: block;
+      width: calc(100% - 2px);
+      height: calc(100% - 2px);
+      background: linear-gradient(180deg, #71c5c8,#2b696d);
+    }
   }
 }
 
