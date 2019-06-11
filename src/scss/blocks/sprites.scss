@@ -1,11 +1,11 @@
 @mixin sprite {
     background-image: url('../img/spritesheet.png');
-    // background-repeat: no-repeat;
-    display: block;
+    background-repeat: no-repeat;
+    // display: block;
 }
 
 @mixin sprite-back {
-    // @include sprite;
+    @include sprite;
     width: 60px;
     height: 60px;
     background-position: -5px -5px;

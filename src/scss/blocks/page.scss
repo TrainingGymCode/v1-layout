@@ -67,6 +67,7 @@
 .main-slider {
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
   position: relative;
   width: 100%;
@@ -117,9 +118,11 @@
   background-color: #fff;
   border: 1px solid #fff;
   // cursor: pointer;
+
   &--active {
     background: linear-gradient(180deg, #71c5c8,#2b696d);
   }
+
   &::after {
     display: block;
     position: relative;
@@ -134,7 +137,7 @@
       #d1d1d1,
       #b5b5b5);
   }
- }
+}
 
 // ===================== SERVICES =======================
 .services__wrapper {
@@ -152,22 +155,25 @@
   display: flex;
   flex-direction: row;
   width: 100%;
-
 }
+
 .slide {
   margin-right: $col-margin;
-
 }
+
 .slide__img-wrapper {
   border: 1px solid $gray-slide;
   padding: 1px;
 }
+
 .slide__img {
   display: block;
   border: 1px solid $gray-slide;
   width: 100%;
   height: auto;
+  box-shadow: 2px 2px 2px #ddd;
 }
+
 .slide__text {
   @include sansus_webissimo--regular(12px, rgb(121,121,121));
   text-align: left;
