@@ -47,7 +47,7 @@ footer, .page__footer-wrapper  {
   }
 }
 
-@mixin footer-contacts__button($bk-col, $bd-col) {
+@mixin contacts__button($bk-col, $bd-col) {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -67,7 +67,7 @@ footer, .page__footer-wrapper  {
 
 .footer-contacts__button {
   &--rss {
-    @include footer-contacts__button(#fed970, #f4b64d);
+    @include contacts__button(#fed970, #f4b64d);
 
     &:before {
       @include sprite-ico_rss;
@@ -75,7 +75,7 @@ footer, .page__footer-wrapper  {
   }
 
   &--twitter {
-    @include footer-contacts__button(#49d7fe, #36b6d9);
+    @include contacts__button(#49d7fe, #36b6d9);
 
     &:before {
       @include sprite-ico_twitter;
@@ -83,7 +83,7 @@ footer, .page__footer-wrapper  {
   }
 
   &--fb {
-    @include footer-contacts__button(#718fc7, #4d6ba3);
+    @include contacts__button(#718fc7, #4d6ba3);
 
     &:before {
       @include sprite-ico_fb;

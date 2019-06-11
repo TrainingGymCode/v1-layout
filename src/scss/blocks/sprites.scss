@@ -12,24 +12,24 @@
 }
 
 @mixin sprite-ico_fb {
-@include sprite;
-    width: 10px;
-    height: 18px;
-    background-position: -75px -5px;
+  @include sprite;
+  width: 10px;
+  height: 18px;
+  background-position: -75px -5px;
 }
 
 @mixin sprite-ico_rss {
-@include sprite;
-    width: 17px;
-    height: 16px;
-    background-position: -75px -33px;
+  @include sprite;
+  width: 17px;
+  height: 16px;
+  background-position: -75px -33px;
 }
 
 @mixin sprite-ico_twitter {
-@include sprite;
-    width: 22px;
-    height: 17px;
-    background-position: -75px -59px;
+  @include sprite;
+  width: 22px;
+  height: 17px;
+  background-position: -75px -59px;
 }
 
 @mixin sprite-shape_round {
@@ -48,56 +48,6 @@
 
 @mixin sprite-slider_button {
 @include sprite;
-    width: 25px;
-    height: 25px;
-    background-position: -123px -59px;
-}
-
-// ====================================================
-.sprite {
-    background-image: url('../img/spritesheet.png');
-    background-repeat: no-repeat;
-    background-position: center center;
-    display: block;
-}
-
-.sprite-back {
-    width: 60px;
-    height: 60px;
-    background-position: -5px -5px;
-}
-
-.sprite-ico_fb {
-    width: 10px;
-    height: 18px;
-    background-position: -75px -5px;
-}
-
-.sprite-ico_rss {
-    width: 17px;
-    height: 16px;
-    background-position: -75px -33px;
-}
-
-.sprite-ico_twitter {
-    width: 22px;
-    height: 17px;
-    background-position: -75px -59px;
-}
-
-.sprite-shape_round {
-    width: 44px;
-    height: 44px;
-    background-position: -102px -5px;
-}
-
-.sprite-slider_back {
-    width: 6px;
-    height: 6px;
-    background-position: -107px -59px;
-}
-
-.sprite-slider_button {
     width: 25px;
     height: 25px;
     background-position: -123px -59px;
