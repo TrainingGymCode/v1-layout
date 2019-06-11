@@ -8,7 +8,7 @@
     height: 100%;
     border-top: $page-border;
     border-bottom: $page-border;
-    padding-top: 74px;
+    padding-top: 70px;
   }
 
   &__content {
@@ -71,7 +71,7 @@
   justify-content: center;
   position: relative;
   width: 100%;
-  padding: 14px;
+  padding: 12px 20px 10px 20px;
   border: 1px solid $gray-slide;
   background:url('../img/slide_back.png') repeat;
 
