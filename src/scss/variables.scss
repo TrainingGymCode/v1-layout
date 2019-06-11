@@ -85,6 +85,14 @@ $line-height:         1.4;
   color: $mx-font-color;
 }
 
+// ===================== MIXINS =======================
+@mixin grad-border ($bd-width, $bd-col1, $bd-col2) {
+  border-width: $bd-width;
+  border-style: solid;
+  border-image: linear-gradient(180deg, #d1d1d1, #b5b5b5) 1 100%;
+  border-image-slice: 1;
+}
+
 // ===================== SCREEN SIZES =======================
 $col-margin:          24px;
 $col-width:           217px;

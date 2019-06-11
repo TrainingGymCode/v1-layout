@@ -26,6 +26,7 @@
 // ===================== BASIC STYLES =======================
 .section__head {
   margin-top: 44px;
+  margin-bottom: 15px;
   @include homestead_display(14px, rgb(144,144,144));
 }
 
@@ -34,7 +35,6 @@
   flex-direction: row;
   width: $col-width;
   margin-right: $col-margin;
-  // flex: 0 0 auto;
 }
 
 .article__logo {
@@ -47,7 +47,6 @@
   margin-right: 14px;
   border: none;
   border-radius: 22px;
-  // background-color: #565656;
   background: repeating-linear-gradient(-45deg, #676767 0%, #676767 1%, #575757 1%, #575757 3%);
   @include homestead_display(21px, rgb(203,203,203));
 }
@@ -74,8 +73,9 @@
   max-width: $col-width + $col-margin + $col-width + $col-margin + $col-width +1px;
   margin-bottom: 62px;
   padding: 12px;
-  border: 1px solid $gray-slide;
+  @include grad-border(1px, #d1d1d1, #b5b5b5);
   background:url('../img/slide_back.png') repeat;
+  box-shadow: rgba(0, 0, 0, 0.32) 0px 2px 4px;
 
   &:after {
     content: '';
@@ -86,8 +86,9 @@
     height: 100%;
     left: 2px;
     top: 2px;
-    border: 1px solid $gray-slide;
+    @include grad-border(1px, #d1d1d1, #b5b5b5);
     background:url('../img/slide_back.png') repeat;
+    box-shadow: rgba(0, 0, 0, 0.32) 0px 2px 4px;
   }
 }
 
@@ -96,7 +97,7 @@
 }
 
 .main-slider__slide {
-
+  box-shadow: rgba(0, 0, 0, 0.32) 0px 2px 4px;
 }
 
 .main-slider__img {
@@ -118,10 +119,7 @@
   height: 11px;
   margin-right: 6px;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.07));
-  border-width: 1px;
-  border-style: solid;
-  border-image: linear-gradient(180deg, #d1d1d1, #b5b5b5) 1 100%;
-  border-image-slice: 1;
+  @include grad-border(1px, #d1d1d1, #b5b5b5);
   box-shadow: rgba(0, 0, 0, 0.32) 0px 2px 4px;
 
   &--active {
@@ -158,16 +156,15 @@
 }
 
 .slide__img-wrapper {
-  border: 1px solid $gray-slide;
+  @include grad-border(1px, #d1d1d1, #b5b5b5);
   padding: 1px;
 }
 
 .slide__img {
   display: block;
-  border: 1px solid $gray-slide;
   width: 100%;
   height: auto;
-  box-shadow: 2px 2px 2px #ddd;
+  @include grad-border(1px, #d1d1d1, #b5b5b5);
 }
 
 .slide__text {
