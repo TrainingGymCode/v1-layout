@@ -63,6 +63,10 @@ footer, .page__footer-wrapper  {
   &:before {
     content: '';
   }
+
+  &:first-of-type {
+    margin-left: 0;
+  }
 }
 
 .footer-contacts__button {
