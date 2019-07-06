@@ -52,6 +52,7 @@ footer, .page__footer-wrapper  {
   justify-content: center;
   align-items: center;
   flex-grow: 0;
+  position: relative;
   width: 30px;
   height: 30px;
   margin-left: 30px;
@@ -64,8 +65,32 @@ footer, .page__footer-wrapper  {
     content: '';
   }
 
+  &:after {
+    display: none;
+    content: '';
+    position: absolute;
+    top: 1;
+    left: 1;
+    width: 28px;
+    height: 28px;
+    border-right: 3px;
+    background-color: #fff;
+    // background: linear-gradient(0deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75));
+
+  }
+
   &:first-of-type {
     margin-left: 0;
+  }
+
+  &:hover {
+    &:after {
+      display: block;
+    }
+  }
+
+  &:onclick {
+    // transformation: ;
   }
 }
 
