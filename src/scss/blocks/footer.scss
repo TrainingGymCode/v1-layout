@@ -74,8 +74,8 @@ footer, .page__footer-wrapper  {
     width: 28px;
     height: 28px;
     border-right: 3px;
-    background-color: #fff;
-    // background: linear-gradient(0deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75));
+    // background-color: #fff;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75));
 
   }
 
@@ -89,9 +89,6 @@ footer, .page__footer-wrapper  {
     }
   }
 
-  &:onclick {
-    // transformation: ;
-  }
 }
 
 .footer-contacts__button {
